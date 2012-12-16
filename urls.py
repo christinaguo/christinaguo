@@ -8,7 +8,20 @@ urlpatterns = patterns('',
 	url(r'^about/$', 'portfolio.views.about')
 	url(r'^projects/$', 'portfolio.views.projects'),
 	url(r'^contact/$', 'portfolio.views.contact'),
-    # Examples:
+	
+	#url(r'^alpha/about/$', 'portfolio.views.alpha_about')
+	#url(r'^alpha/projects/$', 'portfolio.views.alpha_projects'),
+	#url(r'^alpha/contact/$', 'portfolio.views.alpha_contact'),
+	
+	#url(r'^beta/about/$', 'portfolio.views.beta_about')
+	#url(r'^beta/projects/$', 'portfolio.views.beta_projects'),
+	#url(r'^beta/contact/$', 'portfolio.views.beta_contact'),
+	
+	#url(r'^gamma/about/$', 'portfolio.views.gamma_about')
+	#url(r'^gamma/projects/$', 'portfolio.views.gamma_projects'),
+	#url(r'^gamma/contact/$', 'portfolio.views.gamma_contact'),
+    
+	# Examples:
     # url(r'^$', 'christinaguo.views.home', name='home'),
     # url(r'^christinaguo/', include('christinaguo.foo.urls')),
 
