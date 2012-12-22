@@ -1,0 +1,11 @@
+{% extends "gamma/base.html" %}
+
+{% block content %}
+
+{% for project in project_list%}
+	<div class="project_thumbnail">
+		<a href="/projects/{{ project.title.replace(' ', '').lower() }}"><img src="{{ project.photo_thumbnail_link }}"></a>
+	</div>
+{% endfor %}
+
+{% endblock %}

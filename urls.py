@@ -1,13 +1,18 @@
 from django.conf.urls.defaults import patterns, include, url
+from portfolio import views
+from django.views.static import * 
+from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^about/$', 'portfolio.views.about')
+	url(r'^about/$', 'portfolio.views.about'),
 	url(r'^projects/$', 'portfolio.views.projects'),
 	url(r'^contact/$', 'portfolio.views.contact'),
+	
+	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 	
 	#url(r'^alpha/about/$', 'portfolio.views.alpha_about')
 	#url(r'^alpha/projects/$', 'portfolio.views.alpha_projects'),

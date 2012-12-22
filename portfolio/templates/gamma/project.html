@@ -1,0 +1,16 @@
+{% extends "gamma/base.html" %}
+
+{% block content %}
+
+<div id="project_title">
+	{{project.title}}
+</div>
+<div id="project_images">
+	<img src="{{project.photo_medium_link_1}}">
+	<img src="{{project.photo_medium_link_1}}">
+</div>
+<div id="project_description">
+	{{project.description}}
+</div>
+
+{% endblock %}

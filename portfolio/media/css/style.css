@@ -1,0 +1,54 @@
+#page_wrapper {
+	width: 1024px;
+	margin: auto;
+	font-family: Helvetica;
+	color: #666666;
+	font-size: 12px;
+}
+
+#navigation {
+	margin-top: 15px;
+	float: right;
+	color: #808080;
+}
+
+#navigation a  {
+	color: inherit;
+	text-decoration: none;
+	font-family: "futura-pt", sans-serif;
+	letter-spacing: 1px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.nav-link {
+	margin: 20px;
+	display: inline;
+	padding-bottom: 4px;
+	float: left;
+}
+
+.nav-current {
+	border-bottom: 2px solid #E65858;
+	color: #E65858; 
+}
+
+#content {
+	width: 100%;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+#about_left{
+	width: 50%;
+	float: left;
+}
+
+#about_left img {
+	padding-left: 50px;
+}
+
+#about_right{
+	width: 50%;
+	float: right;
+}
