@@ -51,7 +51,7 @@ def gamma_projects(request):
 	return HttpResponse(template.render(context))
 	
 def gamma_project_tixbayarea(request):
-	project = Project.get(title="Tix Bay Area")
+	project = Project.objects.get(title="Tix Bay Area")
 	template = loader.get_template('gamma/project.html')
 	context = Context({
 		'project': project,

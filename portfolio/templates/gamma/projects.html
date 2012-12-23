@@ -2,10 +2,21 @@
 
 {% block content %}
 
+<ul id="projects">
 {% for project in project_list%}
-	<div class="project_thumbnail">
-		<a href="/projects/{{ project.title.replace(' ', '').lower() }}"><img src="{{ project.photo_thumbnail_link }}"></a>
-	</div>
+	<li id="project_1">
+		<div id="project_1_image">
+			<a href="/projects/{{ project.title.lower.split|join:"" }}">
+				<img class="rounded" src="{{ project.photo_thumbnail_link }}">
+			</a>
+		</div>
+		<div class="rounded" id="project_1_overlay">
+			<a href="/projects/{{ project.title.lower.split|join:"" }}">
+				<div><span>{{ project.title }}</span></div>
+			</a>
+		</div>
+	</li>
 {% endfor %}
+</ul>
 
 {% endblock %}
