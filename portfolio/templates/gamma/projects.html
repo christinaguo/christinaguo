@@ -4,13 +4,13 @@
 
 <ul id="projects">
 {% for project in project_list%}
-	<li id="project_1">
-		<div id="project_1_image">
+	<li>
+		<div class="projects_image">
 			<a href="/projects/{{ project.title.lower.split|join:"" }}">
 				<img class="rounded" src="{{ project.photo_thumbnail_link }}">
 			</a>
 		</div>
-		<div class="rounded" id="project_1_overlay">
+		<div class="rounded projects_overlay" id="project_overlay_{{project.priority}}">
 			<a href="/projects/{{ project.title.lower.split|join:"" }}">
 				<div><span>{{ project.title }}</span></div>
 			</a>

@@ -79,7 +79,7 @@ body {
 	color: #FFFFFF;
 }
 
-#project_1 {
+#projects li {
 	position: absolute;
 }
 
@@ -87,7 +87,7 @@ body {
 	position: absolute;
 }
 
-#project_1_image{
+#projects_image{
 	display: block;
 	position: relative;
 }
@@ -98,10 +98,8 @@ body {
 	border-radius: 50em;
 }
 
-#project_1_overlay{
+.projects_overlay {
 	position: absolute;
-	top: 0px;
-	left: 0px;
 	opacity: .9;
 	background-color: #E65858;
 	width: 250px;
@@ -109,15 +107,20 @@ body {
 	text-align: center;
 }
 
-#project_1_overlay div {
-	padding-top: 100px;
-}
-
-#project_1_overlay a {
+.projects_overlay a {
 	display: block;
 	height: 100%;
 }
 
-#project_1_overlay span {
+.projects_overlay div {
+	padding-top: 100px;
+}
+
+.projects_overlay span {
 	margin: auto;
+}
+
+#project_overlay_1{
+	top: 0px;
+	left: 0px;
 }
