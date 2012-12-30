@@ -3,8 +3,10 @@
 	<head>
 		<title>Christina Guo</title>
 		<!--favicon here-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		{% block header %}
 		<link rel="stylesheet" type="text/css" href="../media/css/style.css">
+		<script type="text/javascript" src="../media/javascript/effects.js"></script>
 		{% endblock %}
 		<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
 	</head>
@@ -17,10 +19,12 @@
 					{% endblock %}
 				</div>
 				<div id="navigation">
-					<div class="nav-link nav-current"><a href="/about">ABOUT ME</a></div>
+					{% block nav %}
+					<div class="nav-link"><a href="/about">ABOUT ME</a></div>
 					<div class="nav-link"><a href="/projects">PROJECTS</a></div>
 					<div class="nav-link"><a href="/resume.pdf">RESUME</a></div>
 					<div class="nav-link"><a href="/contact">CONTACT</a></div>
+					{% endblock %}
 				</div>
 			</div>
 			<div id="title">

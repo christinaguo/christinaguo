@@ -110,6 +110,5 @@ def gamma_projects_graphicdesign(request):
 def gamma_contact(request):
 	template = loader.get_template('gamma/contact.html')
 	context = Context({
-		'project_list': project_list,
 	})
 	return HttpResponse(template.render(context))

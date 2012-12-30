@@ -1,5 +1,16 @@
 {% extends "gamma/base.html" %}
 
+{% block nav %}
+<div class="nav-link nav-current"><a href="/about">ABOUT ME</a></div>
+<div class="nav-link"><a href="/projects">PROJECTS</a></div>
+<div class="nav-link"><a href="/resume.pdf">RESUME</a></div>
+<div class="nav-link"><a href="/contact">CONTACT</a></div>
+{% endblock %}
+
+{% block title %}
+ABOUT ME
+{% endblock %}
+
 {% block content %}
 
 <div id="about_left">
