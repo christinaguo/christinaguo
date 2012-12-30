@@ -1,16 +1,38 @@
 {% extends "gamma/base.html" %}
 
-{% block content %}
+{% block header %}
+<link rel="stylesheet" type="text/css" href="../../media/css/style.css">
+{% endblock %}
 
-<div id="project_title">
-	{{project.title}}
-</div>
-<div id="project_images">
-	<img src="{{project.photo_medium_link_1}}">
-	<img src="{{project.photo_medium_link_1}}">
-</div>
-<div id="project_description">
-	{{project.description}}
+{% block logo %}
+<img src="../../media/images/logo.png">
+{% endblock %}
+
+{% block title %}
+{{project.title.upper}}
+{% endblock %}
+
+{% block content %}
+<div id="project">	
+	<div id="project_description">
+		<span class="project_heading">Project Info</span>
+		<p>{{project.description}}</p>
+		<br><br>
+		<span class="project_heading">Tools</span>
+		<ul>
+		{% for tool in tools %}
+		<li>{{tool}}</li>
+		{% endfor %}
+		</ul>
+	</div>
+	<div id="project_images">
+		<div class="project_image">
+			<img src="{{project.photo_medium_link_1}}">
+		</div>
+		<div class="project_image">
+			<img src="{{project.photo_medium_link_2}}">
+		</div>
+	</div>
 </div>
 
 {% endblock %}

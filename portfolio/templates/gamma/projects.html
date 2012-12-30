@@ -4,8 +4,8 @@
 
 <ul id="projects">
 {% for project in project_list%}
-	<li>
-		<div class="projects_image">
+	<li id="li_{{project.priority}}">
+		<div class="projects_image" id="project_image_{{project.priority}}">
 			<a href="/projects/{{ project.title.lower.split|join:"" }}">
 				<img class="rounded" src="{{ project.photo_thumbnail_link }}">
 			</a>
@@ -16,6 +16,7 @@
 			</a>
 		</div>
 	</li>
+	
 {% endfor %}
 </ul>
 

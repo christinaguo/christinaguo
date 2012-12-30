@@ -11,6 +11,10 @@ urlpatterns = patterns('',
 	url(r'^about/$', 'portfolio.views.about'),
 	url(r'^projects/$', 'portfolio.views.projects'),
 	url(r'^contact/$', 'portfolio.views.contact'),
+	url(r'^projects/tixbayarea/$', 'portfolio.views.tixbayarea'),
+	url(r'^projects/meta4explorer/$', 'portfolio.views.meta4explorer'),
+	url(r'^projects/personalportfolio/$', 'portfolio.views.personalportfolio'),
+	url(r'^projects/graphicdesign/$', 'portfolio.views.graphicdesign'),
 	
 	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 	

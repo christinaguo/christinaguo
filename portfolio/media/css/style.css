@@ -43,11 +43,23 @@ body {
 	border-bottom: 2px solid #E65858;
 	color: #E65858; 
 }
+#title {
+	border-top: 1px solid #B0B0B0; 
+	border-bottom: 1px solid #B0B0B0;
+	color: #666666;
+	display: inline-block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	font-size: 24px;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 30px;
+}
 
 #content {
 	width: 100%;
 	display: inline-block;
-	margin-top: 50px;
 }
 
 #about_left{
@@ -66,6 +78,7 @@ body {
 
 #projects{
 	position: relative;
+	list-style: none;
 }
 
 #projects img {
@@ -87,7 +100,7 @@ body {
 	position: absolute;
 }
 
-#projects_image{
+.projects_image{
 	display: block;
 	position: relative;
 }
@@ -102,8 +115,8 @@ body {
 	position: absolute;
 	opacity: .9;
 	background-color: #E65858;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	text-align: center;
 }
 
@@ -113,7 +126,7 @@ body {
 }
 
 .projects_overlay div {
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
 .projects_overlay span {
@@ -122,5 +135,95 @@ body {
 
 #project_overlay_1{
 	top: 0px;
+}
+
+#project_overlay_2{
+	top: 0px;
+}
+
+#project_overlay_3{
+	top: 0px;
+}
+
+#project_overlay_4{
+	top: 0px;
+}
+
+#project_overlay_5{
+	top: 0px;
+}
+
+#li_1{
+	position: relative;
+	top: 0px;
 	left: 0px;
+}
+
+#li_2{
+	position: relative;
+	top: 0px;
+	left: 208px;
+}
+
+#li_3{
+	position: relative;
+	top: 0px;
+	left: 416px;
+}
+
+#li_4{
+	position: relative;
+	top: 0px;
+	left: 624px;
+}
+
+#li_5{
+	position: absolute;
+	top: 0px;
+	left: 832px;
+}
+
+#project_title{
+	
+}
+
+.project_image{
+	float: left;
+	width: 500px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 20px;
+}
+
+#project{
+	display:inline-block;
+}
+
+#project_images{
+	float:left;
+	padding-top: 25px;
+	width: 500px;
+	padding-left: 51px;
+	padding-right: 91px;
+	
+}
+
+#project_description{
+	display: inline;
+	padding-top: 25px;
+	width: 300px;
+	float: left;
+	padding-left: 60px;
+	padding-right: 20px;
+}
+
+.project_heading{
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	color: #E65858; 
+}
+
+#project ul {
+	margin-left: 0px;
+	padding-left: 15px;
 }
