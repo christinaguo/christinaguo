@@ -23,6 +23,42 @@ def personalportfolio(request):
 def graphicdesign(request):
 	return gamma_projects_graphicdesign(request)
 	
+def alpha_index(request):
+	template = loader.get_template('alpha/index.html')
+	context = Context({
+	})
+	return HttpResponse(template.render(context))
+	
+def alpha_about(request):
+	template = loader.get_template('alpha/aboutme.html')
+	context = Context({
+	})
+	return HttpResponse(template.render(context))
+	
+def alpha_work(request):
+	template = loader.get_template('alpha/work.html')
+	context = Context({
+	})
+	return HttpResponse(template.render(context))
+	
+def alpha_graphicdesign(request):
+	template = loader.get_template('alpha/graphicdesign.html')
+	context = Context({
+	})
+	return HttpResponse(template.render(context))
+	
+def alpha_meta4explorer(request):
+	template = loader.get_template('alpha/meta4explorer.html')
+	context = Context({
+	})
+	return HttpResponse(template.render(context))
+	
+def alpha_contact(request):
+	template = loader.get_template('alpha/contact.html')
+	context = Context({
+	})
+	return HttpResponse(template.render(context))
+	
 def beta_about(request):
 	content = About.objects.first()
 	template = loader.get_template('beta/about.html')
