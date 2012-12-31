@@ -8,6 +8,7 @@ from django.conf import settings
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^$', 'portfolio.views.about'),
 	url(r'^about/$', 'portfolio.views.about'),
 	url(r'^projects/$', 'portfolio.views.projects'),
 	url(r'^contact/$', 'portfolio.views.contact'),

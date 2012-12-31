@@ -1,10 +1,10 @@
 {% extends "gamma/base.html" %}
 
 {% block nav %}
-<div class="nav-link"><a href="/about">ABOUT ME</a></div>
-<div class="nav-link nav-current"><a href="/projects">PROJECTS</a></div>
-<div class="nav-link"><a href="/resume.pdf">RESUME</a></div>
-<div class="nav-link"><a href="/contact">CONTACT</a></div>
+<div id="nav-about" class="nav-link"><a href="/about">ABOUT ME</a></div>
+<div id="nav-projects" class="nav-link nav-current"><a href="/projects">PROJECTS</a></div>
+<div id="nav-resume" class="nav-link"><a href="/resume.pdf">RESUME</a></div>
+<div id="nav-contact" class="nav-link"><a href="/contact">CONTACT</a></div>
 {% endblock %}
 
 {% block title %}
@@ -22,7 +22,7 @@ PROJECTS
 			</a>
 		</div>
 		<div class="rounded projects_overlay" id="project_overlay_{{project.priority}}">
-			<a href="/projects/{{ project.title.lower.split|join:"" }}">
+			<a class="project-link" href="/projects/{{ project.title.lower.split|join:"" }}">
 				{% if project.title|length > 12 %}
 					<div><span>
 					{% for word in project.title.split %}

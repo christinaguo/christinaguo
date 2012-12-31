@@ -4,6 +4,7 @@
 		<title>Christina Guo</title>
 		<!--favicon here-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../media/javascript/jquery.ba-hashchange.js"></script>
 		{% block header %}
 		<link rel="stylesheet" type="text/css" href="../media/css/style.css">
 		<script type="text/javascript" src="../media/javascript/effects.js"></script>
@@ -14,27 +15,31 @@
 		<div id="page_wrapper">
 			<div id="header">
 				<div id="logo">
+					<a href="/">
 					{% block logo %}
 					<img src="../media/images/logo.png">
 					{% endblock %}
+					</a>
 				</div>
 				<div id="navigation">
 					{% block nav %}
-					<div class="nav-link"><a href="/about">ABOUT ME</a></div>
-					<div class="nav-link"><a href="/projects">PROJECTS</a></div>
-					<div class="nav-link"><a href="/resume.pdf">RESUME</a></div>
-					<div class="nav-link"><a href="/contact">CONTACT</a></div>
+					<div id="nav-about" class="nav-link"><a href="/about">ABOUT ME</a></div>
+					<div id="nav-projects" class="nav-link"><a href="/projects">PROJECTS</a></div>
+					<div id="nav-resume" class="nav-link"><a href="/resume.pdf">RESUME</a></div>
+					<div id="nav-contact" class="nav-link"><a href="/contact">CONTACT</a></div>
 					{% endblock %}
 				</div>
 			</div>
-			<div id="title">
-			<div>
-			{% block title %}
-			{% endblock %}
-			</div>
-			</div>
-			<div id="content">
-				{% block content %}{% endblock %}
+			<div id="main">
+				<div id="title">
+					<div>
+						{% block title %}
+						{% endblock %}
+					</div>
+				</div>
+				<div id="content">
+					{% block content %}{% endblock %}
+				</div>
 			</div>
 		</div>
 	</body>
