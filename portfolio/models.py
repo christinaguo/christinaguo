@@ -4,12 +4,13 @@ class About(models.Model):
 	description = models.TextField()
 	
 	@classmethod
-	def repopoulate():
+	def repopulate(About):
 		for content in About.objects.all():
 			content.delete()
 		content = About(
-			description = ""
+			description = "<p>Hello! My name is Christina Guo and I'm a third year UC Berkeley student studying Electrical Engineering & Computer Science. My passion lies in web development and UI design, but I have also been rapidly developing an interest in artifical intelligence and machine learning. When I'm not coding, I enjoy dabbling in graphic design and photography, as well as drinking mochas in random coffee shops.</p><p>I love collaborating with toher people, and I'm always looking out for cool new projects to work on. Feel free to click the contact link above and get in touch!"
 		)
+		content.save()
 			
 
 class Project(models.Model):
