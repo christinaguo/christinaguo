@@ -258,3 +258,31 @@ body {
 	padding: 10px;
 	margin-left: 10px;
 }
+
+.button {
+    -webkit-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.25);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.button:active { position: relative; top: 3px;
+    -webkit-box-shadow: inset 0px -3px 1px rgba(255, 255, 255, 1), inset 0 0px 3px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: inset 0px -3px 1px rgba(255, 255, 255, 1), inset 0 0px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0px -3px 1px rgba(255, 255, 255, 1), inset 0 0px 3px rgba(0, 0, 0, 0.9);
+}
+
+#back{
+	text-decoration: none;
+	color: #E65858;
+}
+
+#back_div {
+	display: inline-block;
+	padding-left: 60px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}

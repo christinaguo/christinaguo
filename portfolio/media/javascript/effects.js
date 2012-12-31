@@ -69,6 +69,11 @@ function initBindings() {
 		document.location.hash = url;
 		return false;
 	});
+	
+	$("#back").click(function() {
+		document.location.hash = "/projects";
+		return false;
+	});
 }
 
 $(document).ready(function() {
