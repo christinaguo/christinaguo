@@ -8,7 +8,7 @@ from django.conf import settings
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^$', 'portfolio.views.about'),
+	url(r'^$', 'portfolio.views.projects'),
 	url(r'^about/$', 'portfolio.views.about'),
 	url(r'^projects/$', 'portfolio.views.projects'),
 	url(r'^contact/$', 'portfolio.views.contact'),
@@ -25,9 +25,10 @@ urlpatterns = patterns('',
 	url(r'^alpha/project/meta4explorer/$', 'portfolio.views.alpha_meta4explorer'),
 	url(r'^alpha/project/graphicdesign/$', 'portfolio.views.alpha_graphicdesign'),
 	
-	#url(r'^beta/about/$', 'portfolio.views.beta_about')
-	#url(r'^beta/projects/$', 'portfolio.views.beta_projects'),
-	#url(r'^beta/contact/$', 'portfolio.views.beta_contact'),
+	url(r'^beta/about/$', 'portfolio.views.beta_about'),
+	url(r'^beta/projects/$', 'portfolio.views.beta_projects'),
+	url(r'^beta/contact/$', 'portfolio.views.beta_contact'),
+	url(r'^beta/$', 'portfolio.views.beta_projects'),
     
 	# Examples:
     # url(r'^$', 'christinaguo.views.home', name='home'),

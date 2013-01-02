@@ -64,7 +64,7 @@ class Project(models.Model):
 	
 		proj = Project(
 			title = "Personal Portfolio",
-			description = "I love learning random tricks with HTML and CSS, which means my personal website tends to get a redesign every time I'm on break. Check out some past iterations of this website here: <a href="">alpha</a>, <a href="">beta</a>, <a href="">gamma</a>",
+			description = "I love learning random tricks with HTML and CSS, which means my personal website tends to get a redesign every time I'm on break. Check out some past iterations of this website here: <a href=\"/alpha/\">alpha</a>, <a href=\"beta\">beta</a>",
 			tools = "Python, Django, SQLite, HTML, CSS, Paper/Pencil",
 			photo_thumbnail_link = "/media/images/personal_thumbnail.png",
 			photo_medium_link_1 = "/media/images/personal_med_1.png",

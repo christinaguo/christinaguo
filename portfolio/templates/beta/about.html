@@ -1,0 +1,23 @@
+{% extends "beta/base.html" %}
+
+{% block nav %}
+<div id="nav-projects" class="nav-link"><a href="/beta/projects">PROJECTS</a></div>
+<div id="nav-about" class="nav-link nav-current"><a href="/beta/about">ABOUT ME</a></div>
+<div id="nav-resume" class="nav-link"><a href="/media/resume.pdf">RESUME</a></div>
+<div id="nav-contact" class="nav-link"><a href="/beta/contact">CONTACT</a></div>
+{% endblock %}
+
+{% block title %}
+About Me
+{% endblock %}
+
+{% block content %}
+
+<div id="about_left">
+	<img src="../../media/images/me.jpg">
+</div>
+<div id="about_right">
+	{{ content.description|safe }}
+</div>
+
+{% endblock %}

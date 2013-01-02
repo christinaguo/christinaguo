@@ -1,0 +1,37 @@
+{% extends "beta/base.html" %}
+
+{% block nav %}
+<div id="nav-projects" class="nav-link nav-current"><a href="/beta/projects">PROJECTS</a></div>
+<div id="nav-about" class="nav-link"><a href="/beta/about">ABOUT ME</a></div>
+<div id="nav-resume" class="nav-link"><a href="/media/resume.pdf">RESUME</a></div>
+<div id="nav-contact" class="nav-link"><a href="/beta/contact">CONTACT</a></div>
+{% endblock %}
+
+{% block title %}
+Projects
+{% endblock %}
+
+{% block content %}
+
+<ul id="projects">
+{% for project in project_list%}
+	<li id="li_{{project.priority}}">
+		<div class="projects_title">
+		{{project.title}}
+		</div>
+		<div class="projects_box">
+			<div class="projects_image" id="project_image_{{project.priority}}">
+				<a href="/projects/{{ project.title.lower.split|join:"" }}">
+					<img class="rounded" src="{{ project.photo_medium_link_1 }}">
+				</a>
+			</div>
+			<div class="projects_description">
+				{{project.description}}<p><b>Tools:</b> {{project.tools}}</p>
+			</div>
+		</div>
+	</li>
+	
+{% endfor %}
+</ul>
+
+{% endblock %}

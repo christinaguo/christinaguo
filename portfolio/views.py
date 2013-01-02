@@ -60,7 +60,7 @@ def alpha_contact(request):
 	return HttpResponse(template.render(context))
 	
 def beta_about(request):
-	content = About.objects.first()
+	content = About.objects.all()[0]
 	template = loader.get_template('beta/about.html')
 	context = Context({
 		'content': content,
@@ -78,7 +78,6 @@ def beta_projects(request):
 def beta_contact(request):
 	template = loader.get_template('beta/contact.html')
 	context = Context({
-		'project_list': project_list,
 	})
 	return HttpResponse(template.render(context))
 	

@@ -27,6 +27,10 @@ function updateNav() {
 		$("#nav-projects").removeClass('nav-current');
 		$("#nav-about").removeClass('nav-current');
 		$("#nav-contact").removeClass('nav-current');	
+	} else if (hash == '' && window.location.pathname == '/') {
+		$("#nav-about").removeClass('nav-current');
+		$("#nav-contact").removeClass('nav-current');
+		$("#nav-projects").addClass('nav-current');	
 	}
 	return false;
 }

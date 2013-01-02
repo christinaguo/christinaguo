@@ -8,9 +8,12 @@ width: 900px;
 }
 
 #header{
-background: url('../images/alpha/header.png');
+background: url('../../images/alpha/header.png');
 background-repeat:no-repeat;
 min-height: 220px;
+min-width: 900px;
+display: block;
+clear: none;
 }
 
 ul {
@@ -18,14 +21,17 @@ list-style-type: none;
 }
 
 #navigation{
-position:relative;
-left: 100px;
-top: 150px;
+position:static;
+padding-top: 130px;
+padding-left: 100px;
+left: 300px;
+top: 350px;
 font-size: 22px;
 width: 900px;
 }
 
 #navigation li {
+float: left;
 font-family: Bookman Old Style;
 display: inline-block;
 height: 50px;
@@ -141,14 +147,12 @@ margin-bottom: 12px;
 margin: 0 auto;
 padding: 5px;
 border: 1px solid #A0A0A0;
-font-size: 0px;
 }
 
 #project_meta4explorer{
 margin: 0 auto;
 padding: 5px;
 border: 1px solid #A0A0A0;
-font-size: 0px;
 }
 
 #project_graphicdesign a:link{
@@ -280,4 +284,8 @@ color: #0099FF;
 
 img {
 border: none;
+}
+
+.content{
+margin-bottom: 100px;
 }
